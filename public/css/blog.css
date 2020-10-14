@@ -52,3 +52,31 @@ nav a:hover {
 .btn-dark {
   margin-right: -21rem;
 }
+
+.card-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main {
+  padding: 1rem;
+}
+
+.top {
+  padding: 1rem;
+}
+
+.bottom {
+  padding: 0 1rem;
+}
+
+.card {
+  display: inline-block;
+}
+
+.card:hover {
+  border-color: var(--second-text);
+  cursor: pointer;
+}
