@@ -5,6 +5,7 @@
   --light-blue: #557eed;
   --main-text: #3d3c3c;
   --second-text: #b2b2b2;
+  --input: #f6f6f6;
 }
 
 * {
@@ -79,4 +80,59 @@ main {
 .card:hover {
   border-color: var(--second-text);
   cursor: pointer;
+}
+
+.login-container {
+  width: 485px;
+  height: 475px;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  margin: 0 auto;
+  margin-top: 9rem;
+}
+
+.login-container h3 {
+  margin-top: 2.3rem;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.form-group label {
+  font-size: large;
+  font-weight: 500;
+}
+
+.form-group input {
+  background-color: var(--input);
+  border: none;
+}
+
+form {
+  width: 72%;
+  margin: 0 auto;
+}
+
+.login-container p {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--second-text);
+  font-size: 18px;
+}
+
+.login-container a {
+  text-decoration: none;
+}
+
+.btn-info {
+  width: 72%;
+  margin-top: 1rem;
 }
