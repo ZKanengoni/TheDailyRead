@@ -136,3 +136,53 @@ form {
   width: 72%;
   margin-top: 1rem;
 }
+
+.signup-container {
+  width: 485px;
+  height: 650px;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  margin: 0 auto;
+  margin-top: 6rem;
+}
+
+.signup-container h3 {
+  margin-top: 2.3rem;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.form-group label {
+  font-size: large;
+  font-weight: 500;
+}
+
+.form-group input {
+  background-color: var(--input);
+  border: none;
+}
+
+form {
+  width: 72%;
+  margin: 0 auto;
+}
+
+.signup-container p {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--second-text);
+  font-size: 18px;
+}
+
+.signup-container a {
+  text-decoration: none;
+}
