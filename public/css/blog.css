@@ -54,6 +54,8 @@ nav a:hover {
   margin-right: -21rem;
 }
 
+/* Blog css */
+
 .card-container {
   width: 100%;
   height: 100%;
@@ -81,6 +83,8 @@ main {
   border-color: var(--second-text);
   cursor: pointer;
 }
+
+/* Login css */
 
 .login-container {
   width: 485px;
@@ -190,4 +194,78 @@ form {
 .logo a {
   text-decoration: none;
   color: var(--main-text);
+}
+
+/* Article css */
+.text-background {
+  width: 100%;
+  height: 40vh;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+  width: 75%;
+  height: 130vh;
+  background-color: #fff;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: -10rem;
+  margin-bottom: 4rem;
+}
+
+.comment-section {
+  width: 100%;
+  height: 30%;
+}
+
+.text-section {
+  width: 100%;
+  height: 70%;
+}
+
+.comment-section hr {
+  width: 80%;
+}
+
+.comment-section h3 {
+  color: var(--main-text);
+  padding-left: 9rem;
+}
+
+.comment-input {
+  padding: 0rem;
+  padding-top: 1.5rem;
+}
+
+.form-group label {
+  font-size: larger;
+}
+
+.form-group button {
+  margin-top: 1.5rem;
+}
+
+.blog-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.blog-info h1 {
+  color: var(--main-text);
+}
+
+.text-section p {
+  font-size: larger;
+  text-align: left;
+  padding: 5rem;
+}
+
+.blog-info h5 {
+  color: gray;
 }
