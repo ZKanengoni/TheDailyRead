@@ -186,3 +186,8 @@ form {
 .signup-container a {
   text-decoration: none;
 }
+
+.logo a {
+  text-decoration: none;
+  color: var(--main-text);
+}
