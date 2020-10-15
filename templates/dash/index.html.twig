@@ -1,0 +1,58 @@
+{# {% block title %}Hello DashController!
+{% endblock %} #}
+{% block link %}
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet"/>
+	<link href="{{ asset('css/dash.css') }}" rel="stylesheet"/>
+	{% block stylesheets %}{% endblock %}
+{% endblock %}
+
+{% block body %}
+	<nav class="navbar navbar-light bg-white">
+		<a class="navbar-brand" href="#">
+			<h4>The Daily
+				<strong>Read</strong>
+			</h4>
+		</a>
+		<div class="user-circle">
+			<h4 id="user-login">Z</h4>
+		</div>
+	</nav>
+	<!--navbar-->
+
+	<div class="container-fluid">
+		<div class="row flex-xl-nowrap">
+			<div class="col-12 col-md-3 col-xl-2 sidenav">
+				<div class="profile-info">
+					<div class="profile-img"></div>
+					<div class="edit-profile"><img src="./img/edit.svg" id="edit"/></div>
+					<h4>John Doe</h4>
+					<h5>Owner</h5>
+				</div>
+				<div class="nav-options">
+					<ul>
+						<a href="">
+							<li>Dashboard</li>
+						</a>
+						<a href="">
+							<li>Posts</li>
+						</a>
+						<a href="">
+							<li>Create</li>
+						</a>
+						<a href="">
+							<li>Manage</li>
+						</a>
+						<a href="">
+							<li>Settings</li>
+						</a>
+					</ul>
+				</div>
+			</div>
+			<!--side-nav-->
+
+			<main class="col-12 col-md-9 col-xl-10 py-md-3 pl-md-5 main" role="main"></main>
+			<!--main-container-->
+		</div>
+	</div>
+{% endblock %}
