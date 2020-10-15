@@ -50,8 +50,14 @@ nav a:hover {
   text-decoration: none;
 }
 
-.btn-dark {
+/* .btn-dark {
   margin-right: -21rem;
+} */
+
+.btn-holder {
+  width: 14rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* Blog css */
@@ -82,6 +88,10 @@ main {
 .card:hover {
   border-color: var(--second-text);
   cursor: pointer;
+}
+
+.card-body {
+  color: var(--main-text);
 }
 
 /* Login css */
@@ -136,8 +146,13 @@ form {
   text-decoration: none;
 }
 
-.btn-info {
+.btn-login {
   width: 72%;
+  margin-top: 1rem;
+}
+
+.btn-signup {
+  width: 100%;
   margin-top: 1rem;
 }
 
@@ -268,4 +283,8 @@ form {
 
 .blog-info h5 {
   color: gray;
+}
+
+.btn-more {
+  float: right;
 }
