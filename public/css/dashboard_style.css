@@ -1,0 +1,198 @@
+.header-column {
+    margin-top: 3.5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-top: 10%;
+    padding-bottom: 4%;
+    padding-left: 16%;
+    background-color: white;
+}
+
+.tiles {
+    margin-top: 3.5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: white;
+    min-height: 50vh;
+}
+
+.card-img-top {
+    /* change the height to whatever you want */
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+}
+
+.side_block {
+    width: 30%;
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 2%;
+    height: 40vh;
+}
+
+.card-body2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.card-body2 img {
+    flex-shrink: 0;
+    max-height: 50%
+}
+
+.card-body3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.card-body3 img {
+    flex-shrink: 0;
+    max-height: 50%
+}
+
+.sb_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.sb_1 img {
+    flex-shrink: 0;
+    max-height: 100%
+}
+
+.bg-light {
+    background-color: #fff !important
+}
+
+.container-fluid .sb_2 :hover {
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.navbar {
+    padding: 1.5rem 3rem;
+}
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#footer {
+    background: #fff !important;
+    margin-top: 4%;
+}
+
+#footer h5 {
+    padding-left: 10px;
+    border-left: 3px solid #000;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+#footer a {
+    color: #000;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+#footer ul.social li {
+    padding: 3px 0;
+}
+
+#footer ul.social li a i {
+    margin-right: 5px;
+    font-size: 25px;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+#footer ul.social li:hover a i {
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+#footer ul.social li a,
+#footer ul.quick-links li a {
+    color: #000;
+}
+
+#footer ul.social li a:hover {
+    color: #000;
+}
+
+#footer ul.quick-links li {
+    padding: 3px 0;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+#footer ul.quick-links li:hover {
+    padding: 3px 0;
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+#footer ul.quick-links li a i {
+    margin-right: 5px;
+}
+
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px) {
+    #footer h5 {
+        padding-left: 0;
+        border-left: transparent;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+li {
+    padding-left: 50px;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    max-width: 1413px;
+}
+
+.btn {
+    border: 1px solid;
+    border-color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 10px;
+    border-radius: 0% !important;
+}
+
+.phrase i {
+    font-style: normal;
+    /* Because I is italic by default */
+    color: #fec45e;
+}
