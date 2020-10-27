@@ -5,16 +5,19 @@
 	{% block stylesheets %}{% endblock %}
 {% endblock %}
 
-{# {% block title %}Signup
+{# {% block title %}
+	Signup
 {% endblock %} #}
 
 {% block body %}
 	<div class="signup-container">
 		<form>
 			<div class="logo">
-				<h3>The Daily
-					<strong>Read</strong>
-				</h3>
+				<a href="/">
+					<h3>The Daily
+						<strong>Read</strong>
+					</h3>
+				</a>
 			</div>
 			<div class="form-container">
 				<div class="form-group">
@@ -34,11 +37,11 @@
 					<input type="password" class="form-control" id="password" placeholder="********">
 				</div>
 			</div>
-			<a href="#">
+			<a href="/login">
 				<p>Already have an account?</p>
 			</a>
 			<div class="btn-container text-center">
-				<button type="button" class="btn btn-info btn-login">Register</button>
+				<button type="button" class="btn btn-info btn-signup">Register</button>
 			</div>
 		</form>
 	</div>

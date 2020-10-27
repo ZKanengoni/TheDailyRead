@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
     <meta charset="UTF-8">
     <title>
@@ -43,3 +44,48 @@
 </body>
 
 </html>
+=======
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}Home
+			{% endblock %}
+		</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet"/>
+		<link href="{{ asset('css/blog.css') }}" rel="stylesheet"/> {% block stylesheets %}{% endblock %}
+		</head>
+		<body>
+			<nav class="navbar navbar-light bg-white">
+				<a class="navbar-brand" href="/">
+					<h4>The Daily
+						<strong>Read</strong>
+					</h4>
+				</a>
+				<ul>
+					<a href="/">
+						<li>Home</li>
+					</a>
+					<a href="/blog">
+						<li>Blog</li>
+					</a>
+					<a href="">
+						<li>Events</li>
+					</a>
+					<a href="">
+						<li>Q & A</li>
+					</a>
+				</ul>
+
+				<div class="btn-holder">
+					<a href="/signup" class="btn btn-dark">Get started</a>
+
+					<a href="/login" class="btn btn-outline-dark">Login</a>
+				</div>
+
+			</nav>
+			{% block body %}{% endblock %}
+			{% block javascripts %}{% endblock %}
+		</body>
+	</html>
+
