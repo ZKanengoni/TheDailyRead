@@ -16,4 +16,5 @@ class DashController extends AbstractController
             'controller_name' => 'DashController',
         ]);
     }
+ 
 }
