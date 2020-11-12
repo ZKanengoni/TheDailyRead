@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\PostsRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Components\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=PostsRepository::class)
@@ -37,6 +38,11 @@ class Posts
      */
     private $date;
 
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $image;
+ 
     public function getId(): ?int
     {
         return $this->id;
@@ -86,6 +92,18 @@ class Posts
     public function setDate(\DateTimeInterface $date): self
     {
         $this->date = $date;
+
+        return $this;
+    }
+
+    public function getImage(): ?string
+    {
+        return $this->image;
+    }
+
+    public function setImage(string $image): self
+    {
+        $this->image = $image;
 
         return $this;
     }

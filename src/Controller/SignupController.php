@@ -30,6 +30,7 @@ class SignupController extends AbstractController
             $user->setName($data['firstName']);
             $user->setSurname($data['surname']);
             $user->setActive(true);
+            $user->setRoles(['ROLE_USER']);
     
             $em = $this->getDoctrine()->getManager();
     

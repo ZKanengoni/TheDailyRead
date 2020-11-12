@@ -8,54 +8,53 @@
 	{% block stylesheets %}{% endblock %}
 {% endblock %}
 
-{% block body %}
-	<nav class="navbar navbar-light bg-white">
-		<a class="navbar-brand" href="#">
-			<h4>The Daily
-				<strong>Read</strong>
-			</h4>
+
+<nav class="navbar navbar-light bg-white">
+	<a class="navbar-brand" href="/">
+		<h4>The Daily
+			<strong>Read</strong>
+		</h4>
+	</a>
+	<div class="user-circle">
+		<a href="{{ path('app_logout') }}">
+			<i class="fa fa-sign-out fa-lg" aria-hidden="true"></i>
 		</a>
-		<div class="user-circle">
-			<h4 id="user-login">Z</h4>
-		</div>
-	</nav>
-	<!--navbar-->
+	</div>
+</nav>
+<!--navbar-->
 
-	<div class="container-fluid">
-		<div class="row flex-xl-nowrap">
-			<div class="col-12 col-md-3 col-xl-2 sidenav">
-				<div class="profile-info">
-					<div class="profile-img"></div>
-					<div class="edit-profile">
-						<i class="fa fa-pencil" aria-hidden="true" id="edit" style="color: white;"></i>
-					</div>
-					<h4>John Doe</h4>
-					<h5>Owner</h5>
+<div class="container-fluid">
+	<div class="row flex-xl-nowrap">
+		<div class="col-12 col-md-3 col-xl-2 sidenav">
+			<div class="profile-info">
+				<div class="profile-img"></div>
+				<div class="edit-profile">
+					<i class="fa fa-pencil" aria-hidden="true" id="edit" style="color: white;"></i>
 				</div>
-				<div class="nav-options">
-					<ul>
-						<a href="/dash">
-							<li>Dashboard</li>
-						</a>
-						<a href="/dash/post">
-							<li>Posts</li>
-						</a>
-						<a href="">
-							<li>Create</li>
-						</a>
-						<a href="">
-							<li>Manage</li>
-						</a>
-						<a href="">
-							<li>Settings</li>
-						</a>
-					</ul>
-				</div>
+				<h4>User</h4>
+				<h5>Owner</h5>
 			</div>
-			<!--side-nav-->
+			<div class="nav-options">
+				<ul>
+					<a href="/dash/post">
+						<li>Posts</li>
+					</a>
+					<a href="/dash/create">
+						<li>Create</li>
+					</a>
+					<a href="">
+						<li>Manage</li>
+					</a>
+					<a href="">
+						<li>Settings</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+		<!--side-nav-->
 
-			<main class="col-12 col-md-9 col-xl-10 py-md-3 pl-md-5 main" role="main"></main>
+		<main class="col-12 col-md-9 col-xl-10 py-md-3 pl-md-5 main" role="main"> {% block body %}{% endblock %}
+			</main>
 			<!--main-container-->
 		</div>
 	</div>
-{% endblock %}

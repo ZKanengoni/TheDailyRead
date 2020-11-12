@@ -31,12 +31,23 @@
 					<a href="">
 						<li>Q & A</li>
 					</a>
+					{% if is_granted('IS_AUTHENTICATED_FULLY') and is_granted('ROLE_ADMIN') %}
+						<a href="/dash/post">
+							<li>Dashboard</li>
+						</a>
+					{% endif %}
 				</ul>
 
 				<div class="btn-holder">
-					<a href="/signup" class="btn btn-dark">Get started</a>
 
-					<a href="/login" class="btn btn-outline-dark">Login</a>
+					{% if is_granted('IS_AUTHENTICATED_FULLY') %}
+						<a href="{{ path('app_logout') }}" class="btn btn-info" style="margin-left: 7rem">Logout</a>
+					{% else %}
+						<a href="/signup" class="btn btn-dark">Get started</a>
+
+						<a href="/login" class="btn btn-outline-dark">Login</a>
+					{% endif %}
+
 				</div>
 
 			</nav>
