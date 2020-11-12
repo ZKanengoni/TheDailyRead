@@ -1,3 +1,154 @@
-{% extends "base.html.twig" %}
+{% extends "base.html.twig" %} {% block title %}Blog {% endblock %} {% block body %}
+<div class="container" style="float: left;">
+    <div class="row">
+        <div class="col header-column">
+            <b><p class="phrase"style="margin-top: -1rem;margin-bottom: 1rem;margin-left: -12%; font-size: 22pt; width: 83%;">The only blog you will ever need. <i>The Daily Read</i> will provide you with all your reading needs all in one place.
+                </br>
+                Join today to see what all the fuss is about.</p></b>
+            </br>
+            </br>
+            <button class="btn my-2 my-sm-0" style="background-color: black;color: white;margin-left: -12%;" type="">Join community</button>
+            <img src="{{ asset ('img/download.png')}}" class="img-fluid float-right" style="margin-top: -15rem;max-width: 32%;" alt="Responsive image">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col tiles hoverable ">
+            <img class="card-img-top" src="{{ asset ('img/norse mythology.jpg')}}" alt="icon">
+            <div class="card-body">
+                <h4 class="card-title">Card Title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipsicing elit. Illo, quas.</p>
+                <a class="btn btn-block" style="background-color: black;color: white;" href="#">Read More</a>
+            </div>
+            </br>
+        </div>
+        <div class="col tiles hoverable">
+            <img class="card-img-top" src="{{ asset ('img/Big-Magic-with-Coffee.jpg')}}" alt="icon">
+            <div class="card-body">
+                <h4 class="card-title">Card Title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipsicing elit. Illo, quas.</p>
+                <a class="btn btn-block" href="#" style="background-color: black;color: white;">Read More</a>
+            </div>
+            </br>
+        </div>
+        <div class="col tiles hoverable">
+            <img class="card-img-top" src="{{ asset ('./img/The+antidote+for+everything+by+Kimmery+Martin-1.jpg')}}" alt="icon">
+            <div class="card-body">
+                <h4 class="card-title">Card Title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipsicing elit. Illo, quas.</p>
+                <a class="btn btn-block" href="#" style="background-color: black;color: white;">Read More</a>
+            </div>
+            </br>
+        </div>
 
-{% block body %}{% endblock %}
+    </div>
+
+    <div class="row">
+        <div class="col tiles card flex-md-row mb-4 shadow-sm h-md-250 card-block">
+            <div class="card-body2">
+                <img src="{{ asset ('https://d2ybmm5cpznb3i.cloudfront.net/wp-content/uploads/2016/07/How-to-make-a-book-Hiding-Haelo-open.jpg')}}" class="img-fluid book1" alt="Responsive image">
+            </div>
+
+        </div>
+        <div class="col tiles card flex-md-row mb-4 shadow-sm h-md-250 card-block2">
+            <div class="card-body3" style="max-height: 50vh;">
+                <img src="{{ asset ('https://booktrib.com/wp-content/uploads/2020/05/balladsofsongbirds.jpg')}}" class="img-fluid book2" alt="Responsive image">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row view view overlay">
+        <div class="col side_block sb_1">
+            <div class="text-center mask flex-center rgba-black-light" style="font-size: 20pt;color: white;letter-spacing: 2px;">
+                <img src="{{ asset ('https://www.cloudkettle.com/wp-content/uploads/2017/03/Meet-the-Team.jpg')}}" class="img-fluid songbirds" alt="Responsive image">
+            </div>
+        </div>
+    </div>
+
+    <div class="row ">
+        <div class="col side_block sb_2 " style=" min-height: 115.3vh;">
+            <img src="{{ asset ('img/book side img.svg')}}" class="img-fluid" alt="Responsive image">
+        </div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<section id="footer">
+    <div class="container">
+        <div class="row text-center text-xs-center text-sm-left text-md-left" style="padding-left: 7%;">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h5>Quick links</h5>
+                <ul class="list-unstyled quick-links">
+                    <li><i class="fa fa-angle-double-right"></i>Home</a>
+                    </li>
+                    <li><i class="fa fa-angle-double-right"></i>About</a>
+                    </li>
+                    <li><i class="fa fa-angle-double-right"></i>FAQ</a>
+                    </li>
+                    <li><i class="fa fa-angle-double-right"></i>Get Started</a>
+                    </li>
+                    <li><i class="fa fa-angle-double-right"></i>Videos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h5>Quick links</h5>
+                <ul class="list-unstyled quick-links">
+                    <li><i class="fa fa-angle-double-right"></i>Home</a>
+                    </li>
+                    <li><i class="fa fa-angle-double-right"></i>About</a>
+                    </li>
+                    <li><i class="fa fa-angle-double-right"></i>FAQ</a>
+                    </li>
+                    <li><i class="fa fa-angle-double-right"></i>Get Started</a>
+                    </li>
+                    <li><i class="fa fa-angle-double-right"></i>Videos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h5>Quick links</h5>
+                <ul class="list-unstyled quick-links">
+                    <li><i class="fa fa-angle-double-right"></i>Home</a>
+                    </li>
+                    <li><i class="fa fa-angle-double-right"></i>About</a>
+                    </li>
+                    <li><i class="fa fa-angle-double-right"></i>FAQ</a>
+                    </li>
+                    <li><i class="fa fa-angle-double-right"></i>Get Started</a>
+                    </li>
+                    <li><i class="fa fa-angle-double-right"></i>Imprint</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                <ul class="list-unstyled list-inline social text-center">
+                    <li class="list-inline-item"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li class="list-inline-item"><i class="fa fa-google-plus"></i></a>
+                    </li>
+                    <li class="list-inline-item"><i class="fa fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-black">
+                <p>The Daily Read</p>
+                <p class="h6">© All right Reversed.</p>
+            </div>
+            <hr>
+        </div>
+    </div>
+</section>
+<!-- ./Footer -->
+{% endblock %}
