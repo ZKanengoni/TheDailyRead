@@ -1,0 +1,12 @@
+{% extends "./dash/index.html.twig" %}
+
+{% block body %}
+
+	<div class="container show-container">
+		<h1>{{ post.title }}</h1>
+		<br>
+		<p>{{ post.blog }}</p>
+		<img src="{{'/uploads/' ~ post.image }}">
+	</div>
+
+{% endblock %}
